@@ -9,6 +9,11 @@ import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 
 class SearchForm extends Component {
+
+    handlePageChange = () => {
+        this.props.history.push('/list');
+    }
+
     render() {
         return (
             <>
@@ -34,7 +39,7 @@ class SearchForm extends Component {
                         <Checkbox name="inputLong" label="Long Inseam (34-36)" />
                         <Checkbox name="inputXLong" label="X-Long Inseam (36+)" />
                     </Form>
-                    <Button variant="raised">Search</Button>
+                    <Button onClick={this.handlePageChange} variant="raised">Search</Button>
                 </Container>
             </>
         )
