@@ -4,6 +4,7 @@ import { HashRouter as Router, Route} from 'react-router-dom';
 //import components
 import { withRouter } from 'react-router';
 import Home from '../Pages/Home/Home';
+import SearchList from '../Pages/SearchList/SearchList';
 
 class App extends Component {
   render() {

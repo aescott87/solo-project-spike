@@ -3,16 +3,11 @@ import '../App/App.css';
 import Form from 'muicss/lib/react/form';
 import Input from 'muicss/lib/react/input';
 import Checkbox from 'muicss/lib/react/checkbox';
-import Button from 'muicss/lib/react/button';
 import Container from 'muicss/lib/react/container';
 import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 
 class SearchForm extends Component {
-
-    handlePageChange = () => {
-        this.props.history.push('/list');
-    }
 
     render() {
         return (
@@ -39,7 +34,6 @@ class SearchForm extends Component {
                         <Checkbox name="inputLong" label="Long Inseam (34-36)" />
                         <Checkbox name="inputXLong" label="X-Long Inseam (36+)" />
                     </Form>
-                    <Button onClick={this.handlePageChange} variant="raised">Search</Button>
                 </Container>
             </>
         )
